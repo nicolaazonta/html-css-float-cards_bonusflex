@@ -1,0 +1,89 @@
+/* commons ----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --tb-title: #e53170;
+    --tb-bck_card: #0f0e17 ;
+    --tb-mail: #2fa8d5;
+    --tb-card_text: #ffffff;
+}
+
+body{
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Fredoka', sans-serif;
+    background-color: var(--tb-bck_card);
+}
+
+
+/* utilities ---------------------- */
+.pt-30{
+    padding-top: 30px;
+}
+
+
+/* header ---------------------- */
+header{
+    text-align: center;
+}
+
+h1{
+    font-weight:600;
+    padding: 30px;
+    color: var(--tb-mail)
+}
+
+p{
+    color: var(--tb-card_text);
+}
+
+header p{
+    font-weight: 400;
+}
+
+
+/* main ---------------------- */
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    width: 18rem;
+    aspect-ratio: 7/2;
+    background-color: var(--tb-title);
+}
+
+
+
+div>img{
+    height: 100%;
+}
+
+div>p{
+    margin-left: 0.5rem;
+    color: var(--tb-mail);
+    background-color: var(--tb-bck_card)
+}
+
+.three_row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+/* footer ---------------------- */
+
+footer p{
+    text-align: right;
+    color: var(--tb-title);
+}
